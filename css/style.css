@@ -49,7 +49,36 @@ header > .center {
 .header-logo-box img {
   height: 5rem;
 }
-
+header .container {
+  position: relative;
+}
+.ovarlay-cart {
+  width: 36rem;
+  height: 25.5rem;
+  position: absolute;
+  top: 6rem;
+  right: -5rem;
+  z-index: 1;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+h4 {
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(182, 188, 200, 0.65);
+}
+.cart-content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.cart-content {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--dg-blue);
+}
 /* /////////////////////////////////// */
 /* ********Section hero ************* */
 /* /////////////////////////////////// */
@@ -167,9 +196,8 @@ h3 {
   fill: #fff;
 }
 .operation-content-box {
-  max-width: 40rem;
-  height: 40rem;
-  /* border: 2px solid black; */
+  max-width: 44rem;
+  height: 43rem;
   position: relative;
 }
 
@@ -183,8 +211,6 @@ h3 {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
-  /* transition: all 2s; */
 }
 .active {
   border-radius: 2rem;
