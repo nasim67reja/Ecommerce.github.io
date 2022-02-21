@@ -48,3 +48,37 @@ header > .center {
 .header-logo-box img {
   height: 5rem;
 }
+
+/* /////////////////////////////////// */
+/* ********Section hero ************* */
+/* /////////////////////////////////// */
+
+.hero {
+  gap: 12rem;
+  padding: 5rem;
+  margin-top: 4rem;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 1rem;
+  display: none;
+}
+.active {
+  display: inline-block;
+}
+.operation-tab-box {
+  margin-top: 3.5rem;
+  justify-content: space-between;
+}
+.product-image-small {
+  height: 9rem;
+  border-radius: 1rem;
+
+  /* border: 2px solid black; */
+}
+.active-small {
+  /* box-shadow: 0 0 0 3px var(--main-color); */
+  border: 2px solid var(--main-color);
+  opacity: 0.4;
+}

@@ -34,6 +34,15 @@ p {
   align-items: center;
   justify-content: center;
 }
+.grid {
+  display: grid;
+}
+.grid-1-cols {
+  grid-template-columns: 1fr;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
 /*
 # Front-end Style Guide
 
