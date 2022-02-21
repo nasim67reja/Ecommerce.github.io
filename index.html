@@ -55,15 +55,17 @@
       <div class="hero container grid grid-2-cols">
         <div class="hero-img-box">
           <div class="operation-content-box">
-            <img src="images/image-product-1.jpg " class="product-image operation__content--1 active" alt="shoes"
+            <img src="images/image-product-1.jpg " class="product-image operation-content-1 active" alt="shoes"
               width="400">
-            <img src="images/image-product-2.jpg " class="product-image operation__content--2 " alt="shoes" width="400">
-            <img src="images/image-product-3.jpg " class="product-image operation__content--3 " alt="shoes" width="400">
-            <img src="images/image-product-4.jpg " class="product-image operation__content--4 " alt="shoes" width="400">
+            <img src="images/image-product-2.jpg " class="product-image operation-content-2 " alt="shoes" width="400">
+            <img src="images/image-product-3.jpg " class="product-image operation-content-3 " alt="shoes" width="400">
+            <img src="images/image-product-4.jpg " class="product-image operation-content-4 " alt="shoes" width="400">
           </div>
           <div class="operation-tab-box center">
-            <img src="images/image-product-1-thumbnail.jpg" class="product-image-small active-small " data-tab="1"
-              alt="shoes">
+            <div class="border">
+              <img src="images/image-product-1-thumbnail.jpg" class="product-image-small active-small " data-tab="1"
+                alt="shoes">
+            </div>
             <img src="images/image-product-2-thumbnail.jpg" class="product-image-small " data-tab="2" alt="shoes">
             <img src="images/image-product-3-thumbnail.jpg" class="product-image-small " data-tab="3" alt="shoes">
             <img src="images/image-product-4-thumbnail.jpg" class="product-image-small " data-tab="4" alt="">
@@ -78,14 +80,14 @@
           </h1>
           <p class="description">
             These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
-            they’ll withstand everything the weather can offer
+            they’ll withstand everything the weather can offer.
           </p>
           <div class="price-section">
             <div class="price">$125.00 <span>50%</span></div>
-            <div class="old-price">$250.00</div>
+            <div class="old-price"> <del>$250.00</del></div>
           </div>
-          <div class="btn-list center">
-            <div>
+          <div class="btn-list grid">
+            <div class="number-box">
               <button id="decrease">
                 <img src="images/icon-minus.svg" alt="icon-minus">
               </button>
@@ -94,7 +96,7 @@
                 <img src="images/icon-plus.svg" alt="icon-plus">
               </button>
             </div>
-            <button class="btn">
+            <button class="btn center">
               <span>
                 <svg class="h-logo" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
                   <path id="btn-icon"
@@ -112,6 +114,7 @@
 
 
 
+  <script src="script.js"></script>
 </body>
 
 </html>

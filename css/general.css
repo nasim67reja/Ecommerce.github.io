@@ -43,6 +43,10 @@ p {
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+button:hover,
+.product-image-small:hover {
+  cursor: pointer;
+}
 /*
 # Front-end Style Guide
 
