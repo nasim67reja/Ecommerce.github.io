@@ -44,8 +44,13 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 button:hover,
-.product-image-small:hover {
+.product-image-small:hover,
+.delete-icon:hover {
   cursor: pointer;
+}
+
+.show {
+  display: block !important;
 }
 /*
 # Front-end Style Guide

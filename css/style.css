@@ -2,6 +2,9 @@
 /* ********* Header ************* */
 /* /////////////////////////////////// */
 
+header {
+  margin-top: 2rem;
+}
 header > .center {
   justify-content: space-between;
   padding-bottom: 3.8rem;
@@ -54,7 +57,8 @@ header .container {
 }
 .ovarlay-cart {
   width: 36rem;
-  height: 25.5rem;
+  /* height: 25.5rem; */
+  height: 0rem;
   position: absolute;
   top: 6rem;
   right: -5rem;
@@ -62,6 +66,10 @@ header .container {
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.2s;
 }
 h4 {
   padding: 2rem 3rem;
@@ -74,11 +82,69 @@ h4 {
   align-items: center;
   height: 70%;
 }
-.cart-content {
+.cart-content-empty {
+  display: none;
   font-size: 1.7rem;
   font-weight: bold;
   color: var(--dg-blue);
 }
+.add-cart {
+  position: relative;
+}
+.product-number {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  right: -1.1rem;
+  top: -1.1rem;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 2px 7px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.d-block {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.height {
+  height: 25.5rem;
+}
+
+.cart-content-full {
+  padding: 1.8rem;
+  display: none;
+}
+.cart-info {
+  gap: 2rem;
+  justify-content: space-between;
+  color: var(--dg-blue);
+  line-height: 1.6;
+}
+.cart-info img {
+  width: 5rem;
+  border-radius: 5px;
+}
+.price-info {
+  font-size: 1.6rem;
+}
+#total {
+  font-weight: 700;
+}
+.delete-icon {
+  height: 2.4rem;
+  width: 2.4rem !important;
+  color: #333;
+}
+.cart-content-full .btn {
+  margin-top: 2.7rem;
+  width: 100%;
+}
+
 /* /////////////////////////////////// */
 /* ********Section hero ************* */
 /* /////////////////////////////////// */
@@ -211,6 +277,7 @@ h3 {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transform: rotate(180deg);
 }
 .active {
   border-radius: 2rem;
@@ -220,5 +287,6 @@ h3 {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  transition: all 0.5s;
+  transition: all 0.5s ease-out;
+  transform: rotate(0deg);
 }
