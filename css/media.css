@@ -1,0 +1,109 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 57%;
+  }
+}
+@media (max-width: 62em) {
+  html {
+    font-size: 51%;
+  }
+}
+@media (max-width: 56em) {
+  html {
+    font-size: 46%;
+  }
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 42%;
+  }
+}
+@media (max-width: 45em) {
+  html {
+    font-size: 62.5%;
+  }
+  .main-nav-list {
+    display: none;
+  }
+  .ovarlay-cart {
+    right: 2%;
+  }
+  /* hero */
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+  }
+  .hero-img-box {
+    /* visibility: hidden; */
+    display: none;
+  }
+  .operation-content-box .active {
+    display: none;
+  }
+  .main-ovarlay {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    width: 100%;
+    height: 32rem;
+    background-color: transparent;
+    top: 14%;
+    /* align-items: flex-start; */
+    display: block;
+  }
+  .hero-slider {
+    width: 37.5rem;
+    height: 30rem;
+  }
+  .slider {
+    height: 30rem;
+  }
+  .slide {
+    height: 30rem;
+  }
+  .slider-delete {
+    display: none;
+  }
+  .ovarlay-operation-tab-box {
+    display: none;
+  }
+  .slider__btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .slider__btn--left {
+    left: 10%;
+  }
+  .slider__btn--right {
+    right: 10%;
+  }
+  .btn-right {
+    width: 1.1rem;
+  }
+
+  /* hero text box */
+  .hero-text-box {
+    position: relative;
+    top: 26rem;
+    padding: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.7rem;
+  }
+  .headings-primary {
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+  }
+  .price-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn-list {
+    grid-template-columns: 1fr;
+  }
+  .number-box {
+    padding: 1.5rem;
+  }
+}
