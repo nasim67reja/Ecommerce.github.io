@@ -158,18 +158,10 @@ btnLeft.addEventListener("click", prevSlide);
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowRight") nextSlide();
   else if (e.key === "ArrowLeft") prevSlide();
+  else if (e.key === "Escape") {
+    ovarlaySlider.classList.remove("ovarlay-active");
+  }
 });
-
-//  dotContainer.addEventListener("click", function (e) {
-//     if (e.target.classList.contains("dots__dot")) {
-//       const slide = e.target.dataset.slide;
-//       // const { slides } = e.target.dataset; // another usecase of object distructing
-//       goToSlide(slide);
-//       curSlide = parseInt(slide, 10);
-//       activateDot(slide);
-//     }
-//   });
-// };
 
 dotContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("slider-dot")) {
@@ -178,4 +170,20 @@ dotContainer.addEventListener("click", function (e) {
     curSlide = parseInt(slide, 10);
     activeImg(slide);
   }
+});
+
+const productImage = document.querySelectorAll(".product-image");
+const ovarlaySlider = document.querySelector(".main-ovarlay");
+
+productImage.forEach((el, i) => {
+  el.addEventListener("click", function (e) {
+    ovarlaySlider.classList.add("ovarlay-active");
+    goToSlide(i);
+    curSlide = i;
+    activeImg(i);
+  });
+});
+
+document.querySelector(".slider-delete").addEventListener("click", function () {
+  ovarlaySlider.classList.remove("ovarlay-active");
 });
