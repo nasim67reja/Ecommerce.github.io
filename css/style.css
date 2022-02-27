@@ -390,21 +390,9 @@ h3 {
   gap: 2.5rem;
   margin-top: 4rem;
 }
-.border {
-  width: 9rem;
-  height: 9rem;
-  cursor: pointer;
-  border-radius: 1.5rem;
-  transition: all 0.2s;
+.slider-dot {
+  /* border-radius: 50%; */
 }
-.border:hover {
-  border: 5px solid #fff;
-  opacity: 0.8;
-}
-
-.border img {
-  width: 101%;
-  height: 101%;
-  object-fit: cover;
-  border-radius: 1rem;
+.slider-dot-active {
+  border: 10px solid black;
 }
