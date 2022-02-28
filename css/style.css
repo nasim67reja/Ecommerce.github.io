@@ -13,6 +13,9 @@ header > .center {
 .header-content {
   gap: 5rem;
 }
+.icon-menu {
+  display: none;
+}
 .header-content img {
   width: 14.2rem;
   height: 2.2rem;
@@ -21,6 +24,9 @@ header > .center {
 .main-nav-list {
   gap: 1.7rem;
   list-style: none;
+}
+.cross-icon {
+  display: none;
 }
 .main-nav-link:link,
 .main-nav-link:visited {

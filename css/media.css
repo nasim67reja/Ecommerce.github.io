@@ -22,11 +22,72 @@
   html {
     font-size: 62.5%;
   }
+  /* header */
+  .header-logo {
+    display: flex;
+    gap: 1.6rem;
+  }
+  .icon-menu {
+    display: inline-block;
+    transform: translateY(35%);
+    height: 1.4rem;
+  }
+
+  .header-content img {
+    width: 12rem;
+    height: 1.9rem;
+  }
   .main-nav-list {
-    display: none;
+    position: absolute;
+    height: 100vh;
+    top: -2rem;
+    padding-left: 10rem;
+    gap: 3rem;
+    background-color: #fff;
+    z-index: 200;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    /* create animation: ; */
+    width: 0rem;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  .open {
+    width: 25rem;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    /* transition: all 0.3s; */
+  }
+  .cross-icon {
+    display: inline-block;
+    width: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5.4rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: bold;
+    color: var(--dk-blue);
+    font-size: 1.8rem;
+    text-align: start;
+  }
+  .header-logo-box {
+    gap: 1.8rem;
+  }
+  .h-logo {
+    width: 2rem;
   }
   .ovarlay-cart {
     right: 2%;
+  }
+  .header-logo-box img {
+    width: 3rem;
+    height: 3rem;
   }
   /* hero */
   .hero {
@@ -89,16 +150,19 @@
     padding: 2rem;
   }
   h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
   }
   .headings-primary {
-    font-size: 3.4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
   .price-section {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .price {
+    font-size: 2.4rem;
   }
   .btn-list {
     grid-template-columns: 1fr;
