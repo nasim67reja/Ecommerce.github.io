@@ -2,6 +2,9 @@
   html {
     font-size: 57%;
   }
+  .ovarlay-cart {
+    right: 0;
+  }
 }
 @media (max-width: 62em) {
   html {
@@ -23,6 +26,9 @@
     font-size: 62.5%;
   }
   /* header */
+  header > .center {
+    border: none;
+  }
   .header-logo {
     display: flex;
     gap: 1.6rem;
@@ -41,7 +47,7 @@
     position: absolute;
     height: 100vh;
     top: -2rem;
-    padding-left: 10rem;
+    padding-left: 6rem;
     gap: 3rem;
     background-color: #fff;
     z-index: 200;
@@ -50,6 +56,7 @@
     justify-content: start;
 
     /* create animation: ; */
+    transform: translateX(-10rem);
     width: 0rem;
     opacity: 0;
     pointer-events: none;
@@ -57,7 +64,9 @@
     transition: all 0.3s;
   }
   .open {
+    transform: translateX(0rem);
     width: 25rem;
+    /* width: 0rem; */
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -109,7 +118,7 @@
     width: 100%;
     height: 32rem;
     background-color: transparent;
-    top: 14%;
+    top: 7rem;
     /* align-items: flex-start; */
     display: block;
   }
@@ -157,7 +166,13 @@
     font-size: 3rem;
     margin-bottom: 2rem;
   }
+  .description {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
   .price-section {
+    margin-bottom: 2.5rem;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -169,5 +184,29 @@
   }
   .number-box {
     padding: 1.5rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 23em) {
+  html {
+    font-size: 54%;
+  }
+}
+@media (max-width: 20em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 18em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 15em) {
+  html {
+    font-size: 30%;
   }
 }

@@ -187,3 +187,19 @@ productImage.forEach((el, i) => {
 document.querySelector(".slider-delete").addEventListener("click", function () {
   ovarlaySlider.classList.remove("ovarlay-active");
 });
+
+///////////////////////////////////////
+// Icon Menu button functionality
+///////////////////////////////////////
+
+const iconMenu = document.querySelector(".icon-menu");
+const iconCross = document.querySelector(".cross-icon");
+const mainNav = document.querySelector(".main-nav-list");
+iconMenu.addEventListener("click", function (e) {
+  mainNav.classList.add("open");
+  document.querySelector(".bg").classList.add("bg-color");
+});
+iconCross.addEventListener("click", function () {
+  mainNav.classList.remove("open");
+  document.querySelector(".bg").classList.remove("bg-color");
+});
