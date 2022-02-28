@@ -94,6 +94,12 @@
   .ovarlay-cart {
     right: 2%;
   }
+  .product-number {
+    font-size: 1rem;
+    padding: 1px 5px;
+    right: -10px;
+    top: -8px;
+  }
   .header-logo-box img {
     width: 3rem;
     height: 3rem;
